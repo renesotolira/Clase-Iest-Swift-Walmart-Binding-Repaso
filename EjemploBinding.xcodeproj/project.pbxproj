@@ -13,6 +13,12 @@
 		A732C3C02EA5346300F54735 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A732C3BF2EA5346300F54735 /* Preview Assets.xcassets */; };
 		A7F6DCB82EA55E7900EB67F4 /* ReloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCB72EA55E7900EB67F4 /* ReloadButton.swift */; };
 		A7F6DCBB2EA5606000EB67F4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCBA2EA5606000EB67F4 /* LoadingView.swift */; };
+		A7F6DCBE2EA5620C00EB67F4 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCBD2EA5620C00EB67F4 /* TabsView.swift */; };
+		A7F6DCC12EA5636700EB67F4 /* FacturarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCC02EA5636700EB67F4 /* FacturarView.swift */; };
+		A7F6DCC42EA563D700EB67F4 /* ConsultarFacturaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCC32EA563D700EB67F4 /* ConsultarFacturaView.swift */; };
+		A7F6DCC72EA565A800EB67F4 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCC62EA565A700EB67F4 /* FooterView.swift */; };
+		A7F6DCCA2EA5664F00EB67F4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCC92EA5664F00EB67F4 /* HeaderView.swift */; };
+		A7F6DCCD2EA566F900EB67F4 /* AvisoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6DCCC2EA566F900EB67F4 /* AvisoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		A732C3C12EA5346300F54735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7F6DCB72EA55E7900EB67F4 /* ReloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadButton.swift; sourceTree = "<group>"; };
 		A7F6DCBA2EA5606000EB67F4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A7F6DCBD2EA5620C00EB67F4 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		A7F6DCC02EA5636700EB67F4 /* FacturarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacturarView.swift; sourceTree = "<group>"; };
+		A7F6DCC32EA563D700EB67F4 /* ConsultarFacturaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarFacturaView.swift; sourceTree = "<group>"; };
+		A7F6DCC62EA565A700EB67F4 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		A7F6DCC92EA5664F00EB67F4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A7F6DCCC2EA566F900EB67F4 /* AvisoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +68,13 @@
 		A732C3B72EA5346200F54735 /* EjemploBinding */ = {
 			isa = PBXGroup;
 			children = (
+				A7F6DCD12EA567BD00EB67F4 /* Facturacion */,
+				A7F6DCCF2EA5679100EB67F4 /* Core */,
 				A732C3B82EA5346200F54735 /* EjemploBindingApp.swift */,
 				A732C3BA2EA5346200F54735 /* ContentView.swift */,
 				A732C3BC2EA5346300F54735 /* Assets.xcassets */,
 				A732C3C12EA5346300F54735 /* Info.plist */,
 				A732C3BE2EA5346300F54735 /* Preview Content */,
-				A7F6DCB72EA55E7900EB67F4 /* ReloadButton.swift */,
-				A7F6DCBA2EA5606000EB67F4 /* LoadingView.swift */,
 			);
 			path = EjemploBinding;
 			sourceTree = "<group>";
@@ -73,6 +85,36 @@
 				A732C3BF2EA5346300F54735 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7F6DCCF2EA5679100EB67F4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7F6DCD02EA5679700EB67F4 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A7F6DCD02EA5679700EB67F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7F6DCBA2EA5606000EB67F4 /* LoadingView.swift */,
+				A7F6DCC62EA565A700EB67F4 /* FooterView.swift */,
+				A7F6DCC92EA5664F00EB67F4 /* HeaderView.swift */,
+				A7F6DCB72EA55E7900EB67F4 /* ReloadButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7F6DCD12EA567BD00EB67F4 /* Facturacion */ = {
+			isa = PBXGroup;
+			children = (
+				A7F6DCBD2EA5620C00EB67F4 /* TabsView.swift */,
+				A7F6DCCC2EA566F900EB67F4 /* AvisoView.swift */,
+				A7F6DCC32EA563D700EB67F4 /* ConsultarFacturaView.swift */,
+				A7F6DCC02EA5636700EB67F4 /* FacturarView.swift */,
+			);
+			path = Facturacion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +187,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F6DCB82EA55E7900EB67F4 /* ReloadButton.swift in Sources */,
+				A7F6DCCA2EA5664F00EB67F4 /* HeaderView.swift in Sources */,
+				A7F6DCC42EA563D700EB67F4 /* ConsultarFacturaView.swift in Sources */,
 				A7F6DCBB2EA5606000EB67F4 /* LoadingView.swift in Sources */,
+				A7F6DCC12EA5636700EB67F4 /* FacturarView.swift in Sources */,
 				A732C3BB2EA5346200F54735 /* ContentView.swift in Sources */,
+				A7F6DCC72EA565A800EB67F4 /* FooterView.swift in Sources */,
 				A732C3B92EA5346200F54735 /* EjemploBindingApp.swift in Sources */,
+				A7F6DCBE2EA5620C00EB67F4 /* TabsView.swift in Sources */,
+				A7F6DCCD2EA566F900EB67F4 /* AvisoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
