@@ -23,12 +23,7 @@ struct ContentView: View {
         }
     }
     
-    func loadingToggle(){
-        withAnimation(){
-            showLoading.toggle()
-        }
-    }
-    
+  
     /*tabs tienen
      index, background, subtitle, contenido
      */
@@ -358,32 +353,8 @@ struct ContentView: View {
             .background(Color.gray.opacity(0.33))
             .ignoresSafeArea()
             
-            
-            if(showLoading){
-                VStack(spacing: 40){
-                    Image(systemName: "rays")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                    
-                    Text("Comunicandose con el servidor...\nPor favor espere un momento")
-                        .lineSpacing(15)
-                        .font(.headline)
-                    
-                    Button(action: {
-                        self.loadingToggle()
-                    }){
-                        Text("Cancelar carga")
-                    }
-                    .padding()
-                    .background(Color.gray)
-                    .cornerRadius(12)
-                    
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.black)
-                .foregroundColor(.white)
-                .ignoresSafeArea()
-            }
+            LoadingView(showLoading: $showLoading)
+           
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(
