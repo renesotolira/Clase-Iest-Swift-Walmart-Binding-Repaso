@@ -387,37 +387,7 @@ struct ContentView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(
-            Button(action: {
-                self.loadingToggle()
-            }){
-                if showReloadText{
-                    Label("Recargar", systemImage: "arrow.clockwise")
-                        .transition(.opacity)
-                        .onAppear {
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                withAnimation(.easeOut) {
-                                    self.showReloadText = false
-                                }
-                            }
-                        }
-                    
-                }else{
-                    Image(systemName: "arrow.clockwise")
-                        .transition(.opacity)
-                }
-            }
-            
-            .padding(.horizontal, 8)
-            .padding(.vertical, 8)
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(12)
-            .padding(.horizontal, 8)
-            .padding(.bottom, 32)
-            .opacity(showLoading ? 0 : 1)
-            
-            
+            ReloadButton(showLoading: $showLoading, showReloadText: showReloadText)
             , alignment: .bottomTrailing
         )
     }
